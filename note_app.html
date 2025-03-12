@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple notepad</title>
+    <style>
+  
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+}
+
+
+.cheer-board {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    text-align: center;
+}
+
+
+.cheer-board h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #ff6f61;
+}
+
+.message-display {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    height: 200px;
+    overflow-y: auto;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.input-area {
+    display: flex;
+    gap: 10px;
+}
+
+.input-area input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.input-area button {
+    padding: 10px 20px;
+    background-color: #ff6f61;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.input-area button:hover {
+    background-color: #ff4a3d;
+}
+    </style>
+</head>
+<body>
+    <div class="cheer-board">
+        <h1>NOTEPAD</h1>
+        <div class="message-display" id="messageDisplay">
+
+        </div>
+        <div class="input-area">
+            <input type="text" id="messageInput" placeholder="Add your message">
+            <button onclick="addMessage()">Message</button>
+        </div>
+    </div>
+
+    <script>
+        function addMessage() {
+
+    const messageInput = document.getElementById('messageInput');
+    const message = messageInput.value.trim();
+
+    if (message !== "") {
+
+        const messageDisplay = document.getElementById('messageDisplay');
+        const newMessage = document.createElement('div');
+        newMessage.textContent = message;
+        newMessage.classList.add('message');
+
+        messageDisplay.appendChild(newMessage);
+
+    
+        messageInput.value = "";
+
+        messageDisplay.scrollTop = messageDisplay.scrollHeight;
+    }
+}
+    </script>
+</body>
+</html>
