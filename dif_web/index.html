@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Website</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"
+/>
+ <link rel="stylesheet" type="text/css" href="switcher.css">
+ <style type="text/css">
+          body.dark-theme .header {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("https://images.unsplash.com/photo-1499914485622-a88fac536970?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    }
+      </style>
+<body>
+
+  <!-- popup form section end-->
+
+
+<!-- dark light mode option start -->
+
+<!-- Theme Toggle -->
+  <div class="theme-toggle">
+    <input type="checkbox" id="theme-switch" class="theme-switch">
+
+
+
+    <button type="button" class="theme-toggle-btn" aria-label="Toggle dark mode">
+    <i class="fas fa-moon"></i>
+    <i class="fas fa-sun"></i>
+    <span class="theme-ball"></span>
+  </button>
+  </div>
+
+
+<!-- dark light mode option end -->
+<!-- popup form section start-->
+
+    <div id="formModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="form_close">&times;</span>
+            <h2>Contact Us</h2>
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="state">State:</label>
+                    <select id="state" name="state" required>
+                        <option value="">Select State</option>
+                        <option value="andhraPradesh">Andhra Pradesh</option>
+                          <option value="arunachalPradesh">Arunachal Pradesh</option>
+                          <option value="assam">Assam</option>
+                          <option value="bihar">Bihar</option>
+                          <option value="chhattisgarh">Chhattisgarh</option>
+                          <option value="goa">Goa</option>
+                          <option value="gujarat">Gujarat</option>
+                          <option value="haryana">Haryana</option>
+                          <option value="himachalPradesh">Himachal Pradesh</option>
+                          <option value="jharkhand">Jharkhand</option>
+                          <option value="karnataka">Karnataka</option>
+                          <option value="kerala">Kerala</option>
+                          <option value="madhyaPradesh">Madhya Pradesh</option>
+                          <option value="maharashtra">Maharashtra</option>
+                          <option value="manipur">Manipur</option>
+                          <option value="meghalaya">Meghalaya</option>
+                          <option value="mizoram">Mizoram</option>
+                          <option value="nagaland">Nagaland</option>
+                          <option value="odisha">Odisha</option>
+                          <option value="punjab">Punjab</option>
+                          <option value="rajasthan">Rajasthan</option>
+                          <option value="sikkim">Sikkim</option>
+                          <option value="tamilNadu">Tamil Nadu</option>
+                          <option value="telangana">Telangana</option>
+                          <option value="tripura">Tripura</option>
+                          <option value="uttarPradesh">Uttar Pradesh</option>
+                          <option value="uttarakhand">Uttarakhand</option>
+                          <option value="westBengal">West Bengal</option>
+                        <!-- Add more states as needed-->
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div> 
+
+  <!-- Header Section -->
+  <section class="header">
+    <nav>
+      <div class="logo_section">
+        <img src="https://digitalideaforce.com/wp-content/uploads/2025/02/DIF-Logo-__-01.png" alt="logo" class="logo1">
+        <img src="https://digitalideaforce.com/wp-content/uploads/2025/02/DIF-Logo-__-01.png" alt="logo">
+      </div>
+
+      <div class="menu" id="menu">
+        <ul class="nav1">
+          <li><a href="index.html">Home</a><br><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a><br><a href="about.html">About</a></li>
+          <li><a href="service.html">Service</a><br><a href="service.html">Service</a></li>
+          <li><a href="coming.html">Blog</a><br><a href="coming.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a><br><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="hamburger" id="hamburger">
+        <i class="fas fa-bars"></i>
+      </div>
+    </nav>
+
+    <div class="main-content">
+      <h1>Welcome to Our Website</h1>
+      <p>We provide the best services for your business.</p>
+    </div>
+  </section>
+  <!-- header section end -->
+
+  <!-- Service Section -->
+  <section class="service">
+    <h1>Our Services</h1>
+    <div class="main-container">
+      <!-- First Row -->
+      <div class="card-container">
+        <div class="service-card left">
+          <div class="icon">
+            <img src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?q=80&w=1955&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Service Icon">
+          </div>
+          <h3 class="title">Website Design & Development</h3>
+          <p class="description">Creative High Quality Website Design & Development with mobile friendly</p>
+          <a href="service.html" class="btn">Learn More</a>
+        </div>
+
+        <div class="service-card right">
+          <div class="icon">
+            <img src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?q=80&w=1955&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Service Icon">
+          </div>
+          <h3 class="title">App Development</h3>
+          <p class="description">Make Android & IOS App for Your Business</p>
+          <a href="service.html" class="btn">Learn More</a>
+        </div>
+      </div>
+
+      <!-- Second Row -->
+      <div class="card-container">
+        <div class="service-card left">
+          <div class="icon">
+            <img src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?q=80&w=1955&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Service Icon">
+          </div>
+          <h3 class="title">CRM Development</h3>
+          <p class="description">Custom CRM solutions to streamline customer relationships.</p>
+          <a href="service.html" class="btn">Learn More</a>
+        </div>
+
+        <div class="service-card right">
+          <div class="icon">
+            <img src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?q=80&w=1955&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Service Icon">
+          </div>
+          <h3 class="title">Social Media Management & Marketing</h3>
+          <p class="description">Let engage your customer every where in world</p>
+          <a href="service.html" class="btn">Learn More</a>
+        </div>
+      </div>
+
+      <!-- Third Row -->
+      <div class="card-container">
+        <div class="service-card left">
+          <div class="icon">
+            <img src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?q=80&w=1955&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Service Icon">
+          </div>
+          <h3 class="title">Pay Per Click Advertising / Google Ads</h3>
+          <p class="description">online advertising model where advertisers pay a fee only when a user clicks on their ad, enabling targeted website traffic acquisition.</p>
+          <a href="service.html" class="btn">Learn More</a>
+        </div>
+
+        <div class="service-card right">
+          <div class="icon">
+            <img src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?q=80&w=1955&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Service Icon">
+          </div>
+          <h3 class="title">Search engine Optimisation (SEO)</h3>
+          <p class="description">Let engage your customer every where in world</p>
+          <a href="service.html" class="btn">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Card Section -->
+  <section class="card_section">
+    <h1>Our Projects</h1>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1741851373786-1986f693aaf2?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Placeholder Image">
+      <div class="card-content">
+        <h2>Card Title</h2>
+        <p>This is some example text that describes the card. It will be revealed when the card expands.</p>
+        <a href="coming.html" class="btn">Learn More</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1741851373786-1986f693aaf2?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Placeholder Image">
+      <div class="card-content">
+        <h2>Card Title</h2>
+        <p>This is some example text that describes the card. It will be revealed when the card expands.</p>
+        <a href="coming.html" class="btn">Learn More</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1741851373786-1986f693aaf2?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Placeholder Image">
+      <div class="card-content">
+        <h2>Card Title</h2>
+        <p>This is some example text that describes the card. It will be revealed when the card expands.</p>
+        <a href="coming.html" class="btn">Learn More</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1741851373786-1986f693aaf2?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Placeholder Image">
+      <div class="card-content">
+        <h2>Card Title</h2>
+        <p>This is some example text that describes the card. It will be revealed when the card expands.</p>
+        <a href="coming.html" class="btn">Learn More</a>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1741851373786-1986f693aaf2?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Placeholder Image">
+      <div class="card-content">
+        <h2>Card Title</h2>
+        <p>This is some example text that describes the card. It will be revealed when the card expands.</p>
+        <a href="coming.html" class="btn">Learn More</a>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1741851373786-1986f693aaf2?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Placeholder Image">
+      <div class="card-content">
+        <h2>Card Title</h2>
+        <p>This is some example text that describes the card. It will be revealed when the card expands.</p>
+        <a href="coming.html" class="btn">Learn More</a>
+      </div>
+    </div>
+  </section>
+
+    <!--- testimonial section start--->
+    <section class="testimonial_section">
+        <h1>Our Testimonial</h1>
+
+        <div class="testimonial_card">
+            <div class="left_testimonial">
+                <h2>Success Stories From Those Who Know Us Best</h2>
+                <p>Success stories reflect the hard work, dedication, and innovation that drive our growth. Through overcoming challenges and seizing opportunities, we've achieved remarkable milestones, making a lasting impact in our field.</p>
+                <a href="coming.html">View More</a>
+                <img src="https://images.unsplash.com/photo-1742201408341-29204ea79380?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Team working together">
+
+                <div class="satisfied_customer">
+                    <h2>95%</h2>
+                    <h4>Satisfied Client</h4>
+                    <p>Digital Idea Force ensures success with proven results and happy clients!</p>
+                </div>
+            </div>
+            <div class="right_testimonial">
+                <div class="card1">
+                    <div class="detials">
+                        <div class="left">
+                            <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Ravi Sharma">
+                            <div class="client_name">
+                                <h2>Ravi Sharma</h2>
+                                <h4>client</h4>
+                            </div>
+                        </div>
+                        <div class="right">
+                            <i class="ri-double-quotes-r"></i>
+                        </div>
+                    </div>
+                    <div class="discription">
+                        <p>Digital Idea Force helped us establish a strong online presence. Their SEO strategies boosted our website traffic by 150%, and the results were beyond our expectations. A fantastic team to work with!</p>
+                    </div>
+                </div>
+
+                <div class="card1">
+                    <div class="detials">
+                        <div class="left">
+                            <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Priya Patel">
+                            <div class="client_name">
+                                <h2>Priya Patel</h2>
+                                <h4>client</h4>
+                            </div>
+                        </div>
+                        <div class="right">
+                            <i class="ri-double-quotes-r"></i>
+                        </div>
+                    </div>
+                    <div class="discription">
+                        <p>Their web development team transformed our outdated website into a modern, user-friendly platform. The new design increased our conversion rate by 80% within just three months. Highly recommended!</p>
+                    </div>
+                </div>
+
+                <div class="card1">
+                    <div class="detials">
+                        <div class="left">
+                            <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Amit Kumar">
+                            <div class="client_name">
+                                <h2>Amit Kumar</h2>
+                                <h4>client</h4>
+                            </div>
+                        </div>
+                        <div class="right">
+                            <i class="ri-double-quotes-r"></i>
+                        </div>
+                    </div>
+                    <div class="discription">
+                        <p>The social media campaign they created for us went viral, bringing in thousands of new customers. Their creative approach and data-driven strategies delivered exceptional ROI for our marketing budget.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--- testimonial section end--->
+
+
+  <!-- Footer Section -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>About Us</h3>
+        <p>We are a creative team dedicated to providing the best services and solutions for your business.</p>
+      </div>
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="service.html">Services</a></li>
+          <li><a href="coming.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Contact Us</h3>
+        <p>Email: info@digitalideaforce.com</p>
+        <p>Phone: +91-8527161896</p>
+      </div>
+    </div>
+    <div class="social-icons">
+      <a href="coming.html"><i class="fab fa-facebook-f"></i></a>
+      <a href="coming.html"><i class="fab fa-twitter"></i></a>
+      <a href="coming.html"><i class="fab fa-instagram"></i></a>
+      <a href="coming.html"><i class="fab fa-linkedin-in"></i></a>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Digital Idea Service. All rights reserved.</p>
+    </div>
+  </footer>
+
+
+  <script src="theme.js"></script>
+  <script src="script.js"></script>
+  <script src="humberger.js"></script>
+</body>
+</html>

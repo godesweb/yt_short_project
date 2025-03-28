@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Design & Development Services</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="common.css">
+    <link rel="stylesheet" type="text/css" href="switcher.css">
+    <style type="text/css">
+        
+
+        .header{
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://cdn.prod.website-files.com/646497e9af65ec660cdb5328/649d7014a845ef2a1be2b201_63983e235e91e22b48880e5e_1680x882Flutter-Product1%2520(1).png");
+        }
+
+         body.dark-theme .header {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("https://cdn.prod.website-files.com/646497e9af65ec660cdb5328/649d7014a845ef2a1be2b201_63983e235e91e22b48880e5e_1680x882Flutter-Product1%2520(1).png");
+    }
+    body.dark-theme .platform-badge , body.dark-theme .tech-item{
+        background: #111;
+        border: 1px solid #fff;
+
+    }
+
+    body.dark-theme .app-showcase .app-platform{
+        background: #111;
+    }
+    body.dark-theme .app-showcase .app-platform i{
+        color: rgb(14, 124, 119);
+    }
+    body.dark-theme .app-showcase .app-platform h2{
+        color:rgb(14, 124, 119);
+    }
+
+
+        
+ /* Platform badges */
+        .platform-badge {
+            display: inline-block;
+            padding: 5px 15px;
+            background: #f8f9fa;
+            border-radius: 20px;
+            margin: 20px 5px 10px;
+            border: 1px solid #ddd;
+            font-size: 0.9rem;
+        }
+
+
+                /* App showcase */
+        .app-showcase {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin: 40px 0;
+        }
+        
+        .app-platform {
+            flex: 1;
+            min-width: 300px;
+            background: #f8f9fa;
+            border-radius: 10px;
+            padding: 30px;
+            border-left: 4px solid #0e7c77;
+        }
+        .app-platform p{
+            margin-top: 15px;
+        }
+        
+        .tech-stack {
+            margin-top: 20px;
+        }
+        
+        .tech-item {
+            display: inline-block;
+            background: white;
+            padding: 5px 15px;
+            margin: 0 5px 10px 0;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Theme Toggle -->
+  <div class="theme-toggle">
+    <input type="checkbox" id="theme-switch" class="theme-switch">
+
+
+
+    <button type="button" class="theme-toggle-btn" aria-label="Toggle dark mode">
+    <i class="fas fa-moon"></i>
+    <i class="fas fa-sun"></i>
+    <span class="theme-ball"></span>
+  </button>
+  </div>
+
+
+<!-- dark light mode option end -->
+  <!-- Header Section -->
+  <section class="header">
+    <nav>
+      <div class="logo_section">
+        <img src="https://digitalideaforce.com/wp-content/uploads/2025/02/DIF-Logo-__-01.png" alt="logo" class="logo1">
+        <img src="https://digitalideaforce.com/wp-content/uploads/2025/02/DIF-Logo-__-01.png" alt="logo">
+      </div>
+
+      <div class="menu" id="menu">
+        <ul class="nav1">
+          <li><a href="../index.html">Home</a><br><a href="../index.html">Home</a></li>
+          <li><a href="../about.html">About</a><br><a href="../about.html">About</a></li>
+          <li><a href="../service.html">Service</a><br><a href="../service.html">Service</a></li>
+          <li><a href="../coming.html">Blog</a><br><a href="../coming.html">Blog</a></li>
+          <li><a href="../contact.html">Contact</a><br><a href="../contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="hamburger" id="hamburger">
+        <i class="fas fa-bars"></i>
+      </div>
+    </nav>
+
+    <div class="main-content">
+      <h1>Mobile App Development Services</h1>
+      <p>We build high-performance mobile applications that drive engagement and deliver exceptional user experiences across all platforms.</p>
+    </div>
+  </section>
+
+    <!-- Hero Section -->
+<!--     <section class="service-hero">
+        <div class="container">
+            <h1>Web Design & Development Services</h1>
+            <p>We create stunning, high-performance websites that convert visitors into customers. Our custom web solutions are tailored to your business goals and designed for growth.</p>
+        </div>
+    </section> -->
+
+    <div class="hero-section container">
+        <!-- Service Details Section -->
+        <section class="service-details">
+            <h2>Our App Development Expertise</h2>
+            <p>From concept to launch, we create custom mobile applications that solve business challenges and connect with your target audience effectively.</p>
+            
+            <div class="service-features">
+                <!-- Feature 1 -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Cross-Platform Apps</h3>
+                    <p>Build once, deploy everywhere with Flutter and React Native for cost-effective solutions.</p>
+                    <div>
+                        <span class="platform-badge">iOS</span>
+                        <span class="platform-badge">Android</span>
+                        <span class="platform-badge">Web</span>
+                    </div>
+                </div>
+                
+                <!-- Feature 2 -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3>Native Development</h3>
+                    <p>High-performance native apps using Swift for iOS and Kotlin for Android.</p>
+                    <div>
+                        <span class="platform-badge">Swift</span>
+                        <span class="platform-badge">Kotlin</span>
+                    </div>
+                </div>
+                
+                <!-- Feature 3 -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-sync-alt"></i>
+                    </div>
+                    <h3>API Integration</h3>
+                    <p>Seamless connection with your existing systems and third-party services.</p>
+                    <div>
+                        <span class="platform-badge">REST API</span>
+                        <span class="platform-badge">GraphQL</span>
+                    </div>
+                </div>
+                
+                <!-- Feature 4 -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>App Security</h3>
+                    <p>Enterprise-grade security with data encryption and secure authentication.</p>
+                    <div>
+                        <span class="platform-badge">OAuth</span>
+                        <span class="platform-badge">SSL/TLS</span>
+                    </div>
+                </div>
+                
+                <!-- Feature 5 -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>App Analytics</h3>
+                    <p>Track user behavior and measure performance with integrated analytics.</p>
+                    <div>
+                        <span class="platform-badge">Firebase</span>
+                        <span class="platform-badge">Mixpanel</span>
+                    </div>
+                </div>
+                
+                <!-- Feature 6 -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3>Maintenance</h3>
+                    <p>Ongoing support, updates, and feature enhancements.</p>
+                    <div>
+                        <span class="platform-badge">Updates</span>
+                        <span class="platform-badge">Support</span>
+                    </div>
+                </div>
+            </div>
+
+
+            <h2>Our Development Platforms</h2>
+            <div class="app-showcase">
+                <div class="app-platform">
+                    <h3><i class="fab fa-apple"></i> iOS Development</h3>
+                    <p>Premium native apps built with Swift and SwiftUI, optimized for all Apple devices.</p>
+                    <div class="tech-stack">
+                        <span class="tech-item">Swift</span>
+                        <span class="tech-item">SwiftUI</span>
+                        <span class="tech-item">ARKit</span>
+                        <span class="tech-item">CoreML</span>
+                    </div>
+                </div>
+                
+                <div class="app-platform">
+                    <h3><i class="fab fa-android"></i> Android Development</h3>
+                    <p>High-quality Android apps using Kotlin and Jetpack Compose for modern interfaces.</p>
+                    <div class="tech-stack">
+                        <span class="tech-item">Kotlin</span>
+                        <span class="tech-item">Jetpack</span>
+                        <span class="tech-item">Material Design</span>
+                        <span class="tech-item">Firebase</span>
+                    </div>
+                </div>
+                
+                <div class="app-platform">
+                    <h3><i class="fas fa-globe"></i> Cross-Platform</h3>
+                    <p>Single codebase solutions with Flutter and React Native for faster development.</p>
+                    <div class="tech-stack">
+                        <span class="tech-item">Flutter</span>
+                        <span class="tech-item">React Native</span>
+                        <span class="tech-item">Dart</span>
+                        <span class="tech-item">JavaScript</span>
+                    </div>
+                </div>
+            </div>
+            
+            <h2>Our App Development Process</h2>
+            <p>We follow a proven 6-phase methodology to deliver successful mobile applications:</p>
+            
+            <div class="process-steps">
+                <!-- Step 1 -->
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Discovery & Strategy</h3>
+                    <p>Define your app's purpose, target audience, and key features through workshops.</p>
+                </div>
+                
+                <!-- Step 2 -->
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>UI/UX Design</h3>
+                    <p>Create intuitive user interfaces and seamless user experiences with prototypes.</p>
+                </div>
+                
+                <!-- Step 3 -->
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Technical Architecture</h3>
+                    <p>Design the app's structure, database, APIs, and integration points.</p>
+                </div>
+                
+                <!-- Step 4 -->
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <h3>Development</h3>
+                    <p>Build the application with clean, maintainable code following best practices.</p>
+                </div>
+                
+                <!-- Step 5 -->
+                <div class="step">
+                    <div class="step-number">5</div>
+                    <h3>Testing & QA</h3>
+                    <p>Rigorous testing across devices and scenarios to ensure quality.</p>
+                </div>
+                
+                <!-- Step 6 -->
+                <div class="step">
+                    <div class="step-number">6</div>
+                    <h3>Deployment & Support</h3>
+                    <p>Launch to app stores and provide ongoing maintenance and updates.</p>
+                </div>
+            </div>
+            
+            <h2>Pricing Plans</h2>
+            <p>Customized pricing based on your app's complexity and requirements:</p>
+            
+            <div class="pricing-cards">
+                <!-- Basic Plan -->
+                <div class="pricing-card">
+                    <h3>Basic App</h3>
+                    <div class="price">$8,999<span>starting at</span></div>
+                    <ul class="pricing-features">
+                        <li>Single Platform (iOS or Android)</li>
+                        <li>Up to 5 Screens</li>
+                        <li>Basic UI Components</li>
+                        <li>1 API Integration</li>
+                        <li>3 Months Support</li>
+                        <li>App Store Submission</li>
+                    </ul>
+                    <a href="#" class="btn">Get Started</a>
+                </div>
+                
+                <!-- Popular Plan -->
+                <div class="pricing-card popular">
+                    <div class="popular-tag">Most Popular</div>
+                    <h3>Business App</h3>
+                    <div class="price">$15,999<span>starting at</span></div>
+                    <ul class="pricing-features">
+                        <li>Cross-Platform (iOS + Android)</li>
+                        <li>Up to 15 Screens</li>
+                        <li>Custom UI/UX Design</li>
+                        <li>3-5 API Integrations</li>
+                        <li>6 Months Support</li>
+                        <li>Analytics Dashboard</li>
+                        <li>App Store Submission</li>
+                    </ul>
+                    <a href="#" class="btn">Get Started</a>
+                </div>
+                
+                <!-- Enterprise Plan -->
+                <div class="pricing-card">
+                    <h3>Enterprise Solution</h3>
+                    <div class="price">$25,999<span>starting at</span></div>
+                    <ul class="pricing-features">
+                        <li>Multi-Platform Development</li>
+                        <li>Unlimited Screens</li>
+                        <li>Premium UI/UX Design</li>
+                        <li>Complex Backend Integration</li>
+                        <li>12 Months Support</li>
+                        <li>Advanced Analytics</li>
+                        <li>White-label Solutions</li>
+                        <li>Dedicated Project Manager</li>
+                    </ul>
+                    <a href="#" class="btn">Get Started</a>
+                </div>
+            </div>
+            
+            <h2>Frequently Asked Questions</h2>
+            
+            <div class="faq-container">
+                <!-- FAQ 1 -->
+                <div class="faq-item">
+                    <div class="faq-question">
+                        How long does it take to develop an app?
+                        <i class="fas fa-chevron-down faq-toggle"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Development time varies based on complexity. Simple apps take 2-3 months, medium complexity 3-6 months, and complex enterprise solutions 6+ months. We'll provide a detailed timeline after our initial consultation.</p>
+                    </div>
+                </div>
+                
+                <!-- FAQ 2 -->
+                <div class="faq-item">
+                    <div class="faq-question">
+                        Should I build native or cross-platform apps?
+                        <i class="fas fa-chevron-down faq-toggle"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Native apps offer best performance and access to device features, while cross-platform solutions reduce cost and development time. We'll recommend the best approach based on your requirements, budget, and timeline.</p>
+                    </div>
+                </div>
+                
+                <!-- FAQ 3 -->
+                <div class="faq-item">
+                    <div class="faq-question">
+                        Do you handle app store submissions?
+                        <i class="fas fa-chevron-down faq-toggle"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, we handle the complete app store submission process for both Apple App Store and Google Play Store, including preparing all required assets, metadata, and compliance requirements.</p>
+                    </div>
+                </div>
+                
+                <!-- FAQ 4 -->
+                <div class="faq-item">
+                    <div class="faq-question">
+                        What about ongoing maintenance?
+                        <i class="fas fa-chevron-down faq-toggle"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We offer flexible maintenance plans that include bug fixes, OS updates, feature enhancements, and performance monitoring. Most clients opt for our monthly maintenance packages after launch.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- CTA Section -->
+    <section class="service-cta">
+        <div class="container">
+            <h2>Ready to Build Your Mobile App?</h2>
+            <p>Contact us today for a free consultation and project estimate. Let's turn your app idea into reality.</p>
+            <a href="#" class="btn">Get Free Consultation</a>
+        </div>
+    </section>
+
+
+
+    <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>About Us</h3>
+        <p>We are a creative team dedicated to providing the best services and solutions for your business.</p>
+      </div>
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../service.html">Services</a></li>
+          <li><a href="../coming.html">Blog</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Contact Us</h3>
+        <p>Email: info@digitalideaforce.com</p>
+        <p>Phone: +91-8527161896</p>
+      </div>
+    </div>
+    <div class="social-icons">
+      <a href="coming.html"><i class="fab fa-facebook-f"></i></a>
+      <a href="coming.html"><i class="fab fa-twitter"></i></a>
+      <a href="coming.html"><i class="fab fa-instagram"></i></a>
+      <a href="coming.html"><i class="fab fa-linkedin-in"></i></a>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Digital Idea Service. All rights reserved.</p>
+    </div>
+</footer>
+
+    <script src="hamburger.js"></script>
+<script src="theme.js"></script>
+
+    <script>
+        // FAQ Toggle Functionality
+        const faqItems = document.querySelectorAll('.faq-item');
+        
+        faqItems.forEach(item => {
+            const question = item.querySelector('.faq-question');
+            
+            question.addEventListener('click', () => {
+                // Close all other open FAQs
+                faqItems.forEach(otherItem => {
+                    if (otherItem !== item && otherItem.classList.contains('active')) {
+                        otherItem.classList.remove('active');
+                    }
+                });
+                
+                // Toggle current FAQ
+                item.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+</html>
